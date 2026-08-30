@@ -144,7 +144,18 @@
   </header>
 
   <div class="decks">
-    <!--DECK_CARDS-->
+    <% if (decks.length === 0) { %>
+    <p class="empty">No decks yet — add one under decks/&lt;name&gt;/slides.md</p>
+    <% } %>
+    <% decks.forEach(deck => { %>
+    <a class="card" href="./<%= deck.name %>/">
+      <p class="card-title"><%= deck.title %></p>
+      <% if (deck.description) { %>
+      <p class="card-desc"><%= deck.description %></p>
+      <% } %>
+      <span class="card-open">Open deck &rarr;</span>
+    </a>
+    <% }) %>
   </div>
 
   <footer>
