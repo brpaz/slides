@@ -1,0 +1,14 @@
+{
+  "name": "slides",
+  "type": "module",
+  "private": true,
+  "scripts": {
+    "dev": "slidev",
+    "build:all": "bash scripts/build-all.sh",
+    "export": "slidev export"
+  },
+  "devDependencies": {
+    "@slidev/cli": "^52.19.1",
+    "@slidev/theme-default": "latest"
+  }
+}
