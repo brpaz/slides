@@ -1,6 +1,7 @@
 ---
 theme: default
 title: Example Deck
+description: Test deck for the slides repo build/deploy pipeline.
 info: |
   ## Example Deck
   Test deck for the slides repo build/deploy pipeline.
